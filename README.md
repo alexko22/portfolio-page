@@ -1,6 +1,8 @@
 # Alex Olson's Portfolio
 
-This project is a simple and clean portfolio website built with React, TypeScript, and Vite.
+This project is a simple and clean portfolio website built with React, TypeScript, and Vite. My goal was to find a creative way to help others learn more about me, my goals, and experiences.
+
+You can view the online portfolio here: https://portfolio-page-eta-three.vercel.app/
 
 
 
