@@ -92,8 +92,8 @@ const cards : CardProps[] = [
         type: "stat",
         description: (
             <>
-                Official HoYoCREATORS content creator with over 5K subscribers on YouTube and 300k likes on TikTok. Gained a basic understanding of SEO practices, video editing, and graphic design. See a fun graphic I created of LinkedIn profiles for video game (Genshin) characters{" "}
-                <a href="/nod_krai_linkedin.pdf" target="_blank" rel="noopener noreferrer">
+                Official HoYoCREATORS content creator with over 5K subscribers on YouTube and 300k likes on TikTok. Gained a basic understanding of SEO practices, video editing, and graphic design. See a fun graphic I created with LinkedIn profiles for video game (Genshin) characters{" "}
+                <a href="/nodkrai_linkedin.pdf" target="_blank" rel="noopener noreferrer">
                     here!
                 </a>
             </>
@@ -118,7 +118,7 @@ const cards : CardProps[] = [
         type: "stat",
         description: "I have project-based experience with Python, JavaScript, TypeScript, Java, OCaml, SQL, and HTML/CSS. Some technologies I'm most familiar with include React, Next.js, Git/GitHub, Django, MongoDB, PostgreSQL, Heroku, Vercel, and the Microsoft Power Platform!",
         stat: [
-            { value: "~7", label: "Languages", color: "#336d9d" },
+            { value: "7+", label: "Languages", color: "#336d9d" },
             { value: "Many!", label: "Technologies", color: "#336d9d" },
         ],
         imageUrl: "/python_logo.png"

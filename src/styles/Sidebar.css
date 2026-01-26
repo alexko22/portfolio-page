@@ -18,7 +18,7 @@
     height: 250px;
     border-radius: 50%;
     padding: 4px;
-    background: linear-gradient(135deg, #e25eff, #ffa838, #107aff);
+    background: linear-gradient(135deg, #08ea4d, #009cff);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,6 +32,9 @@
     object-fit: cover;
     border-radius: 50%;
     display: block;
+    image-rendering: auto;
+    backface-visibility: hidden;
+    transform: translateZ(0);
 }
 
 
@@ -115,7 +118,7 @@
     display: inline-block;
     padding: 0.6rem 1.2rem;
     border-radius: 8px;
-    background-color: #9e9e9e;
+    background: linear-gradient(135deg, #08ea4d, #009cff);
     color: #ffffff;
     font-weight: 600;
     font-size: 0.9rem;
