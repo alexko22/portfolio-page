@@ -6,13 +6,13 @@ import React from "react";
 import "../styles/Card.css";
 
 // defining card types
-interface Stat {
-    value: string;
+export interface Stat {
+    value: string | number;
     label: string;
     color?: string;
 }
 
-interface CardProps {
+export interface CardProps {
     type?: "default" | "stat";
     title?: string;
     description: React.ReactNode;

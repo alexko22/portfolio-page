@@ -2,7 +2,7 @@
 // src/components/Sidebar.tsx
 
 // imports
-import React from "react";
+// import React from "react";
 import "../styles/Sidebar.css";
 
 // main Sidebar component...

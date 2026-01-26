@@ -2,14 +2,16 @@
 // src/pages/Home.tsx
 
 // imports
-import React from "react";
+// import React from "react";
 import Masonry from "react-masonry-css";
 import Sidebar from "../components/Sidebar";
 import Card from "../components/Card";
 import "../styles/Home.css";
+import type {CardProps} from "../components/Card";
+
 
 // splash cards
-const cards = [
+const cards : CardProps[] = [
     // College Card
     {
         type: "stat",
