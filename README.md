@@ -1,3 +1,13 @@
+# Alex Olson's Portfolio
+
+This project is a simple, clean, and responsive portfolio website built with React, TypeScript, and Vite. My goal was to find a creative way to help others learn more about me, my goals, and experiences!
+
+You can view the online portfolio here: https://portfolio-page-eta-three.vercel.app/
+
+I plan to add more features in the near future! *Note: there is currently some minor bugs when using Edge browser, so use chrome for the best experience!*
+
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
