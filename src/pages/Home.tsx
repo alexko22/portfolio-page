@@ -38,7 +38,7 @@ const cards : CardProps[] = [
     {
         type: "default",
         title: "ExoCollect - Co-Founder & Developer",
-        description: "Co-founded ExoCollect, a Django-based web platform that provides a gamified way for users (virtual astronomers) to learn about the composition of the universe by discovering uniquely generated virtual planets inspired by real astronomical frequencies. The platform is currently between live testing phases!",
+        description: "Co-founded ExoCollect, a Django-based web platform providing a gamified way for users (virtual astronomers) to learn about the composition of the universe by discovering uniquely generated virtual planets inspired by real astronomical frequencies. The platform is currently between live testing phases!",
         imageUrl: "/exo_collect.png",
     },
     {
@@ -62,7 +62,7 @@ const cards : CardProps[] = [
     // Internship Card
     {
         type: "stat",
-        description: "Developed AI chatbots and automated workflows for Bausch + Lomb, including scheduling, email actions, and approval flows using Power Automate and the Microsoft Power Platform. Created interactive training resources to help employees adopt AI tools effectively.",
+        description: "Developed AI chatbots and automated workflows for Bausch + Lomb, including scheduling, email actions, and approval flows utilizing Power Automate and the Microsoft Power Platform. Created interactive training resources to help employees adopt AI tools effectively.",
         stat: [
             { value: 1, label: "Internship", color: "#00afbc" },
             { value: 2024, label: "Year", color: "#00afbc" },
@@ -74,7 +74,7 @@ const cards : CardProps[] = [
         title: "GitHub & Other Projects",
         description: (
             <>
-                Some of my past projects are not open source, but you can see some of my work, such as the repo for this portfolio, on my GitHub.
+                Some of my past projects are not open source, but you can see some of my work, such as the repo for this portfolio, on my GitHub!
                 <a
                     href="https://github.com/alexko22"
                     target="_blank"
@@ -90,9 +90,16 @@ const cards : CardProps[] = [
     // Hobby Card
     {
         type: "stat",
-        description: "HoYoverse recognized content creator with over 5,000 subscribers on YouTube and 250k likes on TikTok. Gained a general understanding of basic SEO practices, as well as common video editing and design platforms. Accepted to the official HoYoCREATORS program",
+        description: (
+            <>
+                Official HoYoCREATORS content creator with over 5K subscribers on YouTube and 300k likes on TikTok. Gained a basic understanding of SEO practices, video editing, and graphic design. See a fun graphic I created of LinkedIn profiles for video game (Genshin) characters{" "}
+                <a href="/nod_krai_linkedin.pdf" target="_blank" rel="noopener noreferrer">
+                    here!
+                </a>
+            </>
+        ),
         stat: [
-            { value: "5.3K", label: "Subscribers", color: "#5d7ffd" },
+            { value: "5.5K", label: "Subscribers", color: "#5d7ffd" },
             { value: "1.7K", label: "Followers", color: "#5d7ffd" },
         ],
         imageUrl: "/hoyo_logo.webp"
@@ -109,10 +116,10 @@ const cards : CardProps[] = [
     // Languages / Technologies Car
     {
         type: "stat",
-        description: "I have project-based experience with Python, JavaScript, TypeScript, Java, OCaml, SQL, and HTML/CSS. Some resources I'm most familiar with include React, Next.js, Git/GitHub, Django, MongoDB, PostgreSQL, Heroku, and Vercel!",
+        description: "I have project-based experience with Python, JavaScript, TypeScript, Java, OCaml, SQL, and HTML/CSS. Some technologies I'm most familiar with include React, Next.js, Git/GitHub, Django, MongoDB, PostgreSQL, Heroku, Vercel, and the Microsoft Power Platform!",
         stat: [
-            { value: "~7", label: "Languages", color: "#000000" },
-            { value: "Many!", label: "Technologies", color: "#000000" },
+            { value: "~7", label: "Languages", color: "#336d9d" },
+            { value: "Many!", label: "Technologies", color: "#336d9d" },
         ],
         imageUrl: "/python_logo.png"
     },
@@ -120,10 +127,10 @@ const cards : CardProps[] = [
     {
         type: "stat",
         imageUrl: "/google_cloud_logo.png",
-        stat: { value: "5", label: "Certifications", color: "#f59e0b" },
+        stat: { value: "5", label: "Certifications", color: "#fd3d00" },
         description: (
             <>
-                Meta: HTML & CSS in Depth, Programming with JavaScript, Version Control, Intro to Front-End Development, Google Cloud: Intro to Generative AI Learning Path Specialization.
+                Completed HTML & CSS in Depth, Programming with JavaScript, Version Control, Introducton to Front-End Development from Meta & Introduction to Generative AI Learning Path Specialization from Google Cloud. Currently working on: SQL Foundations from Microsoft!
             </>
         ),
     }
