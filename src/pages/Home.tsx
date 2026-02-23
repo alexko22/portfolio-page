@@ -17,7 +17,7 @@ const cards : CardProps[] = [
         type: "stat",
         description: (
             <>
-                Completed my Bachelor's degree in Computer Science from Boston University in December 2025 (Jan 2026). Coursework included Software Engineering, Artificial Intelligence, Algorithms, Data Structures, Probability, Data Science, and more.
+                Completed my Bachelor's degree in Computer Science from Boston University in December 2025, where I also served as a course grader for a Full-Stack Development course. Coursework included Software Engineering, Artificial Intelligence, Algorithms, Data Structures, Probability, Data Science, and more.
                 <a
                     href="https://www.linkedin.com/in/alex-olson-403aab27a/details/courses/"
                     target="_blank"
@@ -30,7 +30,7 @@ const cards : CardProps[] = [
         ),
         stat: [
             { value: 17, label: "CS Courses", color: "#f59e0b" },
-            { value: 3.26, label: "GPA", color: "#f59e0b" },
+            { value: 1, label: "Course Staff Experience", color: "#f59e0b" },
             ],
         imageUrl: "/bu_logo.png",
     },
@@ -100,7 +100,7 @@ const cards : CardProps[] = [
         ),
         stat: [
             { value: "5.5K", label: "Subscribers", color: "#5d7ffd" },
-            { value: "1.7K", label: "Followers", color: "#5d7ffd" },
+            { value: "2.0K", label: "Followers", color: "#5d7ffd" },
         ],
         imageUrl: "/hoyo_logo.webp"
     },
@@ -116,7 +116,7 @@ const cards : CardProps[] = [
     // Languages / Technologies Car
     {
         type: "stat",
-        description: "I have project-based experience with Python, JavaScript, TypeScript, Java, OCaml, SQL, and HTML/CSS. Some technologies I'm most familiar with include React, Next.js, Git/GitHub, Django, MongoDB, PostgreSQL, Heroku, Vercel, and the Microsoft Power Platform!",
+        description: "I have project and/or work experience with Python, JavaScript, TypeScript, Java, OCaml, HTML/CSS, and SQL. Some tech I'm most familiar with includes React, Next.js, Git/GitHub, Django, MongoDB, PostgreSQL, Vercel, and the Microsoft Power Platform!",
         stat: [
             { value: "7+", label: "Languages", color: "#336d9d" },
             { value: "Many!", label: "Technologies", color: "#336d9d" },
@@ -127,10 +127,10 @@ const cards : CardProps[] = [
     {
         type: "stat",
         imageUrl: "/google_cloud_logo.png",
-        stat: { value: "5", label: "Certifications", color: "#fd3d00" },
+        stat: { value: "7", label: "Certifications", color: "#fd3d00" },
         description: (
             <>
-                Completed HTML & CSS in Depth, Programming with JavaScript, Version Control, Introducton to Front-End Development from Meta & Introduction to Generative AI Learning Path Specialization from Google Cloud. Currently working on: SQL Foundations from Microsoft!
+                Completed HTML & CSS in Depth, Programming with JavaScript, Version Control, Introducton to Front-End Development from Meta & The Intro to Gen AI Learning Path Specialization from Google Cloud. I recently wrapped up the SQL Foundations program from Microsoft, as well as the Software Engineering Job Sim from Wells Fargo!
             </>
         ),
     }
