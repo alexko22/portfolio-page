@@ -27,7 +27,7 @@ const Sidebar = () => {
             </div>
 
             <div className="resume">
-                <a href="/Alex-Olson-Resume.pdf" target="_blank" rel="noopener noreferrer">
+                <a href="/Alex_Olson_Resume_April.pdf" target="_blank" rel="noopener noreferrer">
                     Download Resume
                 </a>
             </div>

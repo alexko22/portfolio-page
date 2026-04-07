@@ -17,7 +17,7 @@ const cards : CardProps[] = [
         type: "stat",
         description: (
             <>
-                Completed my Bachelor's degree in Computer Science from Boston University in December 2025, where I also served as a course grader for a Full-Stack Development course. Coursework included Software Engineering, Artificial Intelligence, Algorithms, Data Structures, Probability, Data Science, and more.
+                Graduated with my Bachelor's degree in CS from Boston University in Fall 2025, where I also served as a course grader for a Full-Stack Development course. Coursework included Software Engineering, Artificial Intelligence, Algorithms, Data Structures, Probability, Data Science, and more.
                 <a
                     href="https://www.linkedin.com/in/alex-olson-403aab27a/details/courses/"
                     target="_blank"
@@ -38,7 +38,7 @@ const cards : CardProps[] = [
     {
         type: "default",
         title: "ExoCollect - Co-Founder & Developer",
-        description: "Co-founded ExoCollect, a Django-based web platform providing a gamified way for users (virtual astronomers) to learn about the composition of the universe by discovering uniquely generated virtual planets inspired by real astronomical frequencies. The platform is currently between live testing phases!",
+        description: "Co-founded ExoCollect, a Django-based web platform providing a gamified way for users (virtual astronomers) to learn about the composition of the universe via discovering uniquely generated virtual planets (inspired by real astronomical frequencies). The platform is currently in between live testing phases!",
         imageUrl: "/exo_collect.png",
     },
     {
@@ -62,7 +62,7 @@ const cards : CardProps[] = [
     // Internship Card
     {
         type: "stat",
-        description: "Developed AI chatbots and automated workflows for Bausch + Lomb, including scheduling, email actions, and approval flows utilizing Power Automate and the Microsoft Power Platform. Created interactive training resources to help employees adopt AI tools effectively.",
+        description: "Developed AI chatbots and automated workflows during an internship for Bausch + Lomb, including scheduling, email actions, and approval flows utilizing Power Automate and the Microsoft Power Platform. Created interactive training resources to help employees adopt AI tools effectively.",
         stat: [
             { value: 1, label: "Internship", color: "#00afbc" },
             { value: 2024, label: "Year", color: "#00afbc" },
@@ -74,7 +74,7 @@ const cards : CardProps[] = [
         title: "GitHub & Other Projects",
         description: (
             <>
-                Some of my past projects are not open source, but you can see some of my work, such as the repo for this portfolio, on my GitHub!
+                Not all of my past projects are open source, but you can see some of my work, such as the repo for this portfolio, on my GitHub!
                 <a
                     href="https://github.com/alexko22"
                     target="_blank"
@@ -92,7 +92,7 @@ const cards : CardProps[] = [
         type: "stat",
         description: (
             <>
-                Official HoYoCREATORS content creator with over 5K subscribers on YouTube and 300k likes on TikTok. Gained a basic understanding of SEO practices, video editing, and graphic design. See a fun graphic I created with LinkedIn profiles for video game (Genshin) characters{" "}
+                Official HoYoCREATORS content creator with over 5K subscribers on YouTube and 350k likes on TikTok. Gained a basic understanding of SEO practices, video editing, and graphic design. See a fun graphic I created with LinkedIn profiles for video game (Genshin Impact) characters{" "}
                 <a href="/nodkrai_linkedin.pdf" target="_blank" rel="noopener noreferrer">
                     here!
                 </a>
@@ -100,7 +100,7 @@ const cards : CardProps[] = [
         ),
         stat: [
             { value: "5.5K", label: "Subscribers", color: "#5d7ffd" },
-            { value: "2.0K", label: "Followers", color: "#5d7ffd" },
+            { value: "2.1K", label: "Followers", color: "#5d7ffd" },
         ],
         imageUrl: "/hoyo_logo.webp"
     },
@@ -113,27 +113,60 @@ const cards : CardProps[] = [
         ],
         imageUrl: "/extern_logo.jpg"
     },
-    // Languages / Technologies Car
+    // Volunteer Card
+    {
+        type: "default",
+        title: "JerseySTEM - AI Specialist",
+        description: "Currently doing pro bono work as an AI Specialist at JerseySTEM. Supporting the adoption of AI tools within the organization, creating training resources, and assisting in the planning and development of new AI tools/agents.",
+        imageUrl: "/js.png",
+    },
+    // Languages / Technologies Card
     {
         type: "stat",
-        description: "I have project and/or work experience with Python, JavaScript, TypeScript, Java, OCaml, HTML/CSS, and SQL. Some tech I'm most familiar with includes React, Next.js, Git/GitHub, Django, MongoDB, PostgreSQL, Vercel, and the Microsoft Power Platform!",
+        description: "I have project and/or work experience with Python, JavaScript, TypeScript, Java, OCaml, and SQL. The technologies I'm most familiar with includes React, Next.js, Git/GitHub, Django, MongoDB, PostgreSQL, MySQL, Vercel, and the Microsoft Power Platform!",
         stat: [
             { value: "7+", label: "Languages", color: "#336d9d" },
             { value: "Many!", label: "Technologies", color: "#336d9d" },
         ],
         imageUrl: "/python_logo.png"
     },
+    {
+        type: "default",
+        title: "YouRise AI - Developer",
+        description: (
+            <>
+                Created YouRise AI, an online platform where you can generated AI-powered SEO suggestions from a single YouTube video link. The tech stack includes React, Django, and Next.js. The free Render hosted backend takes a minute to wake up but you can test it{""}
+                <a
+                    href="https://youtube-ai-analyzer-theta.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="card-link"
+                >
+                    here!
+                </a>
+            </>
+        ),
+        imageUrl: "/yr.png",
+    },
     // Certification Card
     {
         type: "stat",
         imageUrl: "/google_cloud_logo.png",
-        stat: { value: "7", label: "Certifications", color: "#fd3d00" },
+        stat: { value: "8", label: "Certifications", color: "#fd3d00" },
         description: (
             <>
-                Completed HTML & CSS in Depth, Programming with JavaScript, Version Control, Introducton to Front-End Development from Meta & The Intro to Gen AI Learning Path Specialization from Google Cloud. I recently wrapped up the SQL Foundations program from Microsoft, as well as the Software Engineering Job Sim from Wells Fargo!
+                Always seeking to learn more, I have sought out and completed various certifications related to Software Development, AI, and SQL from reputable companies like Microsoft, Meta, and Wells Fargo. You can see all the certifications I've completed on my LinkedIn{""}
+                <a
+                    href="https://www.linkedin.com/in/alex-olson-403aab27a/details/certifications/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="card-link"
+                >
+                    here!
+                </a>
             </>
         ),
-    }
+    },
 
 ];
 
