@@ -16,7 +16,7 @@ const Sidebar = () => {
             <p className="description">
                 Eager to learn and motivated Fall 2025 CS Graduate from Boston University.
                 Interested in Software Development, AI + Automation, and finding creative ways to use technology.
-                Currently searching for a relevant entry-level role! Feel free to connect!
+                Starting a new role soon as a Junior Developer! Feel free to connect!
             </p>
 
             <div className="contact">
