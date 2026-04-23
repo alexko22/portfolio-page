@@ -17,7 +17,7 @@ const cards : CardProps[] = [
         type: "stat",
         description: (
             <>
-                Graduated with my Bachelor's degree in CS from Boston University in Fall 2025, where I also served as a course grader for a Full-Stack Development course. Coursework included Software Engineering, Artificial Intelligence, Algorithms, Data Structures, Probability, Data Science, and more.
+                Graduated with my Bachelor's degree in CS from Boston University in Fall 2025, where I also served as a course grader for a Full-Stack Development course. My coursework included Software Engineering, Artificial Intelligence, Algorithms, Data Structures, Probability, and more.
                 <a
                     href="https://www.linkedin.com/in/alex-olson-403aab27a/details/courses/"
                     target="_blank"
@@ -38,26 +38,15 @@ const cards : CardProps[] = [
     {
         type: "default",
         title: "ExoCollect - Co-Founder & Developer",
-        description: "Co-founded ExoCollect, a Django-based web platform providing a gamified way for users (virtual astronomers) to learn about the composition of the universe via discovering uniquely generated virtual planets (inspired by real astronomical frequencies). The platform is currently in between live testing phases!",
+        description: "Co-founded ExoCollect, a Django-based web platform providing a gamified way for users (virtual astronomers) to learn about the composition of the universe via discovering uniquely generated virtual planets (inspired by real astronomical frequencies). The platform is currently in between live testing phases! Stay tuned for updates!",
         imageUrl: "/exo_collect.png",
     },
+    // Job Card
     {
-        type: "stat",
-        description: (
-            <>
-                Active on LinkedIn, using it to connect with other developers and keep up with the latest tools, ideas, and trends in tech.
-                <a
-                    href="https://www.linkedin.com/in/alex-olson-403aab27a/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="card-link"
-                >
-                    (See Profile)
-                </a>
-            </>
-        ),
-        stat: { value: "500+", label: "Connections", color: "#215780" },
-        imageUrl: "/linked_in_logo.png",
+        type: "default",
+        title: "Giftogram - Incoming Junior Full Stack Developer",
+        description: "Starting a new full-time position soon as a Junior Full Stack Developer with Giftogram. As such, no longer searching for a role!",
+        imageUrl: "/gifto.jpg",
     },
     // Internship Card
     {
@@ -69,23 +58,12 @@ const cards : CardProps[] = [
         ],
         imageUrl: "/bnl.png"
     },
+    // Volunteer Card
     {
         type: "default",
-        title: "GitHub & Other Projects",
-        description: (
-            <>
-                Not all of my past projects are open source, but you can see some of my work, such as the repo for this portfolio, on my GitHub!
-                <a
-                    href="https://github.com/alexko22"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="card-link"
-                >
-                    (See Profile)
-                </a>
-            </>
-        ),
-        imageUrl: "/github_logo.png",
+        title: "JerseySTEM - AI Specialist",
+        description: "Currently doing pro bono work as an AI Specialist at JerseySTEM. Supporting the adoption of AI tools within the organization, creating training resources, and assisting in the planning and development of new AI tools/agents.",
+        imageUrl: "/js.png",
     },
     // Hobby Card
     {
@@ -113,12 +91,24 @@ const cards : CardProps[] = [
         ],
         imageUrl: "/extern_logo.jpg"
     },
-    // Volunteer Card
+    // LinkedIn Card
     {
-        type: "default",
-        title: "JerseySTEM - AI Specialist",
-        description: "Currently doing pro bono work as an AI Specialist at JerseySTEM. Supporting the adoption of AI tools within the organization, creating training resources, and assisting in the planning and development of new AI tools/agents.",
-        imageUrl: "/js.png",
+        type: "stat",
+        description: (
+            <>
+                Active on LinkedIn, using it to connect with other developers and keep up with the latest tools, ideas, and trends in tech.
+                <a
+                    href="https://www.linkedin.com/in/alex-olson-403aab27a/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="card-link"
+                >
+                    (See Profile)
+                </a>
+            </>
+        ),
+        stat: { value: "500+", label: "Connections", color: "#215780" },
+        imageUrl: "/linked_in_logo.png",
     },
     // Languages / Technologies Card
     {
@@ -148,6 +138,25 @@ const cards : CardProps[] = [
         ),
         imageUrl: "/yr.png",
     },
+    // GitHub Card
+    {
+        type: "default",
+        title: "GitHub & Other Projects",
+        description: (
+            <>
+                Not all of my past projects are open source, but you can see some of my work, such as the repo for this portfolio, on my GitHub! I enjoy using GitHub both for basic version control and having all my work in one place!
+                <a
+                    href="https://github.com/alexko22"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="card-link"
+                >
+                    (See Profile)
+                </a>
+            </>
+        ),
+        imageUrl: "/github_logo.png",
+    },
     // Certification Card
     {
         type: "stat",
@@ -155,7 +164,7 @@ const cards : CardProps[] = [
         stat: { value: "8", label: "Certifications", color: "#fd3d00" },
         description: (
             <>
-                Always seeking to learn more, I have sought out and completed various certifications related to Software Development, AI, and SQL from reputable companies like Microsoft, Meta, and Wells Fargo. You can see all the certifications I've completed on my LinkedIn{""}
+                Always seeking to learn more, I have sought out and completed various certifications related to Software Development, AI, and SQL from reputable companies like Microsoft, Meta, and Wells Fargo. You can see the certifications I've completed on my LinkedIn{""}
                 <a
                     href="https://www.linkedin.com/in/alex-olson-403aab27a/details/certifications/"
                     target="_blank"
@@ -167,6 +176,7 @@ const cards : CardProps[] = [
             </>
         ),
     },
+
 
 ];
 
