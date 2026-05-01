@@ -15,7 +15,7 @@ const Sidebar = () => {
             <h2>Alex Olson</h2>
             <p className="description">
                 Eager to learn and motivated Fall 2025 CS Graduate from Boston University.
-                Incoming Junior Full Stack Developer @ Giftogram. Serving as an AI Specialist @ JerseySTEM.
+                Current Junior Full Stack Developer @ Giftogram and AI Specialist @ JerseySTEM.
                 Feel free to connect!
             </p>
 
