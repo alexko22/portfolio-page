@@ -45,7 +45,7 @@ const cards : CardProps[] = [
     {
         type: "default",
         title: "Giftogram - Junior Developer",
-        description: "Recently started a new full-time position soon as a Junior Full Stack Developer with Giftogram. As such, no longer searching for a new role at this time. Excited to be learning under experienced developers and contributing to a team!",
+        description: "Recently started a new full-time position as a Junior Full Stack Developer with Giftogram. Assisting in the platforms development through bug fixes, feature enchancements, and testing. Excited to be learning under experienced developers and contributing to a team!",
         imageUrl: "/gifto.jpg",
     },
     // Internship Card
