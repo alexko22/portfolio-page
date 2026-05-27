@@ -45,7 +45,7 @@ const cards : CardProps[] = [
     {
         type: "default",
         title: "Giftogram - Junior Developer",
-        description: "Recently started a new full-time position soon as a Junior Full Stack Developer with Giftogram. As such, no longer searching for a new role at this time. Excited to be learning under experienced developers and contributing to a team!",
+        description: "Recently started a full-time position soon as a Junior Full Stack Developer at Giftogram. As such, not seeking a new role at this time. Excited to be learning under experienced developers and contributing to an amazing platform!",
         imageUrl: "/gifto.jpg",
     },
     // Internship Card
@@ -62,7 +62,7 @@ const cards : CardProps[] = [
     {
         type: "default",
         title: "JerseySTEM - AI Specialist",
-        description: "Currently doing pro bono work as an AI Specialist at JerseySTEM. Supporting the adoption of AI tools within the organization, creating training resources, and assisting in the planning and development of new AI tools/agents.",
+        description: "Recently wrapped up my pro bono role as an AI Specialist with JerseySTEM. Supported the adoption of AI tools within the organization, created training resources, and assisted in the planning and development of new AI tools/agents.",
         imageUrl: "/js.png",
     },
     // Hobby Card
@@ -70,7 +70,7 @@ const cards : CardProps[] = [
         type: "stat",
         description: (
             <>
-                Official HoYoCREATORS content creator with over 5K subscribers on YouTube and 350k likes on TikTok. Gained a basic understanding of SEO practices, video editing, and graphic design. See a fun graphic I created with LinkedIn profiles for video game (Genshin Impact) characters{" "}
+                Official HoYoCREATORS content creator with over 5K subscribers on YouTube and 400k likes on TikTok. Gained a basic understanding of SEO practices, video editing, and graphic design. See a fun graphic I created with LinkedIn profiles for video game (Genshin Impact) characters{" "}
                 <a href="/nodkrai_linkedin.pdf" target="_blank" rel="noopener noreferrer">
                     here!
                 </a>
@@ -78,7 +78,7 @@ const cards : CardProps[] = [
         ),
         stat: [
             { value: "5.5K", label: "Subscribers", color: "#5d7ffd" },
-            { value: "2.1K", label: "Followers", color: "#5d7ffd" },
+            { value: "2.2K", label: "Followers", color: "#5d7ffd" },
         ],
         imageUrl: "/hoyo_logo.webp"
     },
@@ -113,7 +113,7 @@ const cards : CardProps[] = [
     // Languages / Technologies Card
     {
         type: "stat",
-        description: "I have project and/or work experience with Python, JavaScript, TypeScript, Java, OCaml, and SQL. The technologies I'm most familiar with includes React, Next.js, Git/GitHub, Django, MongoDB, PostgreSQL, MySQL, Vercel, and the Microsoft Power Platform!",
+        description: "I have project and/or work experience with Python, PHP, JavaScript, TypeScript, Java, and SQL. The technologies I'm most familiar with includes React, Next.js, Git/GitHub, Django, MongoDB, PostgreSQL, MySQL, Vercel, and the Microsoft Power Platform!",
         stat: [
             { value: "7+", label: "Languages", color: "#336d9d" },
             { value: "Many!", label: "Technologies", color: "#336d9d" },
