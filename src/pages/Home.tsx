@@ -45,7 +45,7 @@ const cards : CardProps[] = [
     {
         type: "default",
         title: "Giftogram - Junior Developer",
-        description: "Recently started a full-time position soon as a Junior Full Stack Developer at Giftogram. As such, not seeking a new role at this time. Excited to be learning under experienced developers and contributing to an amazing platform!",
+        description: "Currently working as a Junior Full Stack Developer at Giftogram. Completing ticket based tasks and working on larger QA and AI related projects. As such, not seeking a new role at this time. Excited to be learning under experienced developers and contributing to an amazing platform!",
         imageUrl: "/gifto.jpg",
     },
     // Internship Card
@@ -113,7 +113,7 @@ const cards : CardProps[] = [
     // Languages / Technologies Card
     {
         type: "stat",
-        description: "I have project and/or work experience with Python, PHP, JavaScript, TypeScript, Java, and SQL. The technologies I'm most familiar with includes React, Next.js, Git/GitHub, Django, MongoDB, PostgreSQL, MySQL, Vercel, and the Microsoft Power Platform!",
+        description: "I have project and/or work experience with Python, PHP, JavaScript, TypeScript, Java, and SQL. The tech I'm most familiar with includes React, Next.js, Laravel, Django, Git/GitHub, MongoDB, MySQL, Vercel, and the Microsoft Power Platform!",
         stat: [
             { value: "7+", label: "Languages", color: "#336d9d" },
             { value: "Many!", label: "Technologies", color: "#336d9d" },
