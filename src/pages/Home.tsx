@@ -45,7 +45,7 @@ const cards : CardProps[] = [
     {
         type: "default",
         title: "Giftogram - Junior Developer",
-        description: "Currently working as a Junior Full Stack Developer at Giftogram. Completing ticket based tasks and working on larger QA and AI related projects. As such, not seeking a new role at this time. Excited to be learning under experienced developers and contributing to an amazing platform!",
+        description: "Currently working as a Junior Full Stack Developer at Giftogram. Completing ticket based development tasks as well as working on much larger QA and AI related projects. As such, not seeking a new role at this time. Excited to be learning under experienced developers and contributing to an amazing platform!",
         imageUrl: "/gifto.jpg",
     },
     // Internship Card
@@ -78,7 +78,7 @@ const cards : CardProps[] = [
         ),
         stat: [
             { value: "5.5K", label: "Subscribers", color: "#5d7ffd" },
-            { value: "2.2K", label: "Followers", color: "#5d7ffd" },
+            { value: "2.3K", label: "Followers", color: "#5d7ffd" },
         ],
         imageUrl: "/hoyo_logo.webp"
     },
@@ -152,6 +152,15 @@ const cards : CardProps[] = [
                     className="card-link"
                 >
                     (See Profile)
+                </a>
+                {" "}Try out the Beta for my most recent project,
+                <a
+                    href="https://knomi.gg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="card-link"
+                >
+                    Knomi!
                 </a>
             </>
         ),
