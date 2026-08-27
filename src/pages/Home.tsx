@@ -17,7 +17,7 @@ const cards : CardProps[] = [
         type: "stat",
         description: (
             <>
-                Graduated with my Bachelor's degree in CS from Boston University in Fall 2025, where I also served as a course grader for a Full-Stack Development course. My coursework included Software Engineering, Artificial Intelligence, Algorithms, Data Structures, Probability, and more.
+                Graduated with my Bachelor's degree in CS from Boston University in Fall 2025, where I also served as a course grader for a Full Stack Development course. My coursework included Software Engineering, Artificial Intelligence, Algorithms, Data Structures, Probability, and more.
                 <a
                     href="https://www.linkedin.com/in/alex-olson-403aab27a/details/courses/"
                     target="_blank"
@@ -38,14 +38,14 @@ const cards : CardProps[] = [
     {
         type: "default",
         title: "ExoCollect - Co-Founder & Developer",
-        description: "Co-founded ExoCollect, a Django-based web platform providing a gamified way for users (virtual astronomers) to learn about the composition of the universe via discovering uniquely generated virtual planets (inspired by real astronomical frequencies). The platform is currently in between live testing phases! Stay tuned for updates!",
+        description: "Co-founded ExoCollect, a Django-based web platform providing a gamified way for users (virtual astronomers) to learn about the composition of the universe via discovering uniquely generated virtual planets (inspired by real astronomical frequencies). The platform is currently nearing a second test phase! Stay tuned for updates!",
         imageUrl: "/exo_collect.png",
     },
     // Job Card
     {
         type: "default",
         title: "Giftogram - Junior Developer",
-        description: "Currently working as a Junior Full Stack Developer at Giftogram. Completing ticket based development tasks as well as working on much larger QA and AI related projects. As such, not seeking a new role at this time. Excited to be learning under experienced developers and contributing to an amazing platform!",
+        description: "Currently working as a Junior Full Stack Developer at Giftogram. Completing ticket based software development tasks amd working on larger QA/AI related initiatives. As such, I'm not seeking a new role at this time. Excited to be learning under experienced developers and contributing to an amazing platform!",
         imageUrl: "/gifto.jpg",
     },
     // Internship Card
@@ -58,29 +58,48 @@ const cards : CardProps[] = [
         ],
         imageUrl: "/bnl.png"
     },
-    // Volunteer Card
+    // Knomi Card
     {
         type: "default",
-        title: "JerseySTEM - AI Specialist",
-        description: "Recently wrapped up my pro bono role as an AI Specialist with JerseySTEM. Supported the adoption of AI tools within the organization, created training resources, and assisted in the planning and development of new AI tools/agents.",
-        imageUrl: "/js.png",
+        title: "Knomi - Developer",
+        description: (
+            <>
+                Developed Knomi, a React, Laravel, and MySQL based web application that enables users to build fully customizable & link sharable profile pages featuring ranked lists, links, and content cards. You can try it out
+                <a
+                    href="https://www.knomi.gg/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="card-link"
+                >
+                    here!
+                </a>
+            </>
+        ),
+        imageUrl: "/knomi.png",
     },
     // Hobby Card
     {
         type: "stat",
         description: (
             <>
-                Official HoYoCREATORS content creator with over 5K subscribers on YouTube and 400k likes on TikTok. Gained a basic understanding of SEO practices, video editing, and graphic design. See a fun graphic I created with LinkedIn profiles for video game (Genshin Impact) characters{" "}
+                Official HoYoCREATORS content creator with over 5K subscribers on YouTube and 475k likes on TikTok. Gained a basic understanding of SEO practices, video editing, and graphic design. See a fun graphic I created with LinkedIn profiles for video game (Genshin Impact) characters{" "}
                 <a href="/nodkrai_linkedin.pdf" target="_blank" rel="noopener noreferrer">
                     here!
                 </a>
             </>
         ),
         stat: [
-            { value: "5.5K", label: "Subscribers", color: "#5d7ffd" },
+            { value: "5.4K", label: "Subscribers", color: "#5d7ffd" },
             { value: "2.3K", label: "Followers", color: "#5d7ffd" },
         ],
         imageUrl: "/hoyo_logo.webp"
+    },
+    // Volunteer Card
+    {
+        type: "default",
+        title: "JerseySTEM - AI Specialist",
+        description: "Wrapped up my pro bono role earlier this year as an AI Specialist with JerseySTEM. Supported the adoption of AI tools within the organization, created training resources, and assisted in the planning and development of new AI tools/agents.",
+        imageUrl: "/js.png",
     },
     // Externship Card
     {
@@ -111,14 +130,33 @@ const cards : CardProps[] = [
         imageUrl: "/linked_in_logo.png",
     },
     // Languages / Technologies Card
+    //{
+    //    type: "stat",
+    //    description: "I have project and/or work experience with Python, PHP, JavaScript, TypeScript, Java, and SQL. The tech I'm most familiar with includes React, Next.js, Laravel, Django, Git/GitHub, MongoDB, MySQL, Vercel, and the Microsoft Power Platform!",
+    //    stat: [
+    //        { value: "7+", label: "Languages", color: "#336d9d" },
+    //        { value: "Many!", label: "Technologies", color: "#336d9d" },
+    //    ],
+    //    imageUrl: "/python_logo.png"
+    //},
+    // Certification Card
     {
         type: "stat",
-        description: "I have project and/or work experience with Python, PHP, JavaScript, TypeScript, Java, and SQL. The tech I'm most familiar with includes React, Next.js, Laravel, Django, Git/GitHub, MongoDB, MySQL, Vercel, and the Microsoft Power Platform!",
-        stat: [
-            { value: "7+", label: "Languages", color: "#336d9d" },
-            { value: "Many!", label: "Technologies", color: "#336d9d" },
-        ],
-        imageUrl: "/python_logo.png"
+        imageUrl: "/anthropp.svg",
+        stat: { value: "8", label: "Certifications", color: "#d77656" },
+        description: (
+            <>
+                Always looking to upskill, I have sought out various certifications related to Software Development, AI, and more from reputable companies like Microsoft, Meta, and Anthropic. You can see the certifications I've completed on my LinkedIn{""}
+                <a
+                    href="https://www.linkedin.com/in/alex-olson-403aab27a/details/certifications/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="card-link"
+                >
+                    here!
+                </a>
+            </>
+        ),
     },
     {
         type: "default",
@@ -153,37 +191,9 @@ const cards : CardProps[] = [
                 >
                     (See Profile)
                 </a>
-                {" "}Try out the Beta for my most recent project,
-                <a
-                    href="https://knomi.gg"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="card-link"
-                >
-                    Knomi!
-                </a>
             </>
         ),
         imageUrl: "/github_logo.png",
-    },
-    // Certification Card
-    {
-        type: "stat",
-        imageUrl: "/google_cloud_logo.png",
-        stat: { value: "8", label: "Certifications", color: "#fd3d00" },
-        description: (
-            <>
-                Always seeking to learn more, I have sought out and completed various certifications related to Software Development, AI, and SQL from reputable companies like Microsoft, Meta, and Wells Fargo. You can see the certifications I've completed on my LinkedIn{""}
-                <a
-                    href="https://www.linkedin.com/in/alex-olson-403aab27a/details/certifications/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="card-link"
-                >
-                    here!
-                </a>
-            </>
-        ),
     },
 
 
