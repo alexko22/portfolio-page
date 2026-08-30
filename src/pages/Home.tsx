@@ -82,7 +82,7 @@ const cards : CardProps[] = [
         type: "stat",
         description: (
             <>
-                Official HoYoCREATORS content creator with over 5K subscribers on YouTube and 475k likes on TikTok. Gained a basic understanding of SEO practices, video editing, and graphic design. See a fun graphic I created with LinkedIn profiles for video game (Genshin Impact) characters{" "}
+                Official HoYoCREATORS content creator with over 5K subscribers on YouTube and ~500k likes on TikTok. Gained a basic understanding of SEO practices, video editing, and graphic design. See a fun graphic I created with LinkedIn profiles for video game (Genshin Impact) characters{" "}
                 <a href="/nodkrai_linkedin.pdf" target="_blank" rel="noopener noreferrer">
                     here!
                 </a>
@@ -90,7 +90,7 @@ const cards : CardProps[] = [
         ),
         stat: [
             { value: "5.4K", label: "Subscribers", color: "#5d7ffd" },
-            { value: "2.3K", label: "Followers", color: "#5d7ffd" },
+            { value: "2.4K", label: "Followers", color: "#5d7ffd" },
         ],
         imageUrl: "/hoyo_logo.webp"
     },
