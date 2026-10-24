@@ -3,10 +3,14 @@
 
 // imports
 // import React from "react";
+import { Link, useLocation } from "react-router-dom";
 import "../styles/Sidebar.css";
 
 // main Sidebar component...
 const Sidebar = () => {
+    const { pathname } = useLocation();
+    const isProjectsPage = pathname === "/projects";
+
     return (
         <div className="sidebar">
             <div className="profile-pic">
@@ -26,10 +30,13 @@ const Sidebar = () => {
                 <p> Open to Relocation </p>
             </div>
 
-            <div className="resume">
+            <div className="sidebar-actions">
                 <a href="/AO_Resume_Aug26.pdf" target="_blank" rel="noopener noreferrer">
                     Download Resume
                 </a>
+                <Link to={isProjectsPage ? "/" : "/projects"}>
+                    {isProjectsPage ? "Back Home" : "View Projects"}
+                </Link>
             </div>
 
 

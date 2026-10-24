@@ -129,16 +129,6 @@ const cards : CardProps[] = [
         stat: { value: "500+", label: "Connections", color: "#215780" },
         imageUrl: "/linked_in_logo.png",
     },
-    // Languages / Technologies Card
-    //{
-    //    type: "stat",
-    //    description: "I have project and/or work experience with Python, PHP, JavaScript, TypeScript, Java, and SQL. The tech I'm most familiar with includes React, Next.js, Laravel, Django, Git/GitHub, MongoDB, MySQL, Vercel, and the Microsoft Power Platform!",
-    //    stat: [
-    //        { value: "7+", label: "Languages", color: "#336d9d" },
-    //        { value: "Many!", label: "Technologies", color: "#336d9d" },
-    //    ],
-    //    imageUrl: "/python_logo.png"
-    //},
     // Certification Card
     {
         type: "stat",

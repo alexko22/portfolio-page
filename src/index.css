@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
 /* Alex Olson | alexko22222@gmail.com
 // index.css */
 
@@ -6,8 +8,6 @@ html, body, #root {
   margin: 0;
   padding: 0;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
 @media (max-width: 768px) {
   html, body {
