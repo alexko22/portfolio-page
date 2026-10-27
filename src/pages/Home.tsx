@@ -38,14 +38,14 @@ const cards : CardProps[] = [
     {
         type: "default",
         title: "ExoCollect - Co-Founder & Developer",
-        description: "Co-founded ExoCollect, a Django-based web platform providing a gamified way for users (virtual astronomers) to learn about the composition of the universe via discovering uniquely generated virtual planets (inspired by real astronomical frequencies). The platform is currently nearing a second test phase! Stay tuned for updates!",
+        description: "Co-founded ExoCollect, a Django-based web platform providing a gamified way for users (virtual astronomers) to learn about the composition of the universe via discovering uniquely generated virtual planets (inspired by real astronomical frequencies). The platform is currently in a second test phase! See my projects to try it out!",
         imageUrl: "/exo_collect.png",
     },
     // Job Card
     {
         type: "default",
         title: "Giftogram - Junior Developer",
-        description: "Currently working as a Junior Full Stack Developer at Giftogram. Completing ticket based software development tasks amd working on larger QA/AI related initiatives. As such, I'm not seeking a new role at this time. Excited to be learning under experienced developers and contributing to an amazing platform!",
+        description: "Currently serving as a Junior Full Stack Developer at Giftogram. Completing ticket based software development tasks and working on larger QA/AI related initiatives. As such, I'm not seeking a new role at this time. Excited to be learning under experienced developers and contributing to an amazing platform!",
         imageUrl: "/gifto.jpg",
     },
     // Internship Card
@@ -82,7 +82,7 @@ const cards : CardProps[] = [
         type: "stat",
         description: (
             <>
-                Official HoYoCREATORS content creator with over 5K subscribers on YouTube and ~500k likes on TikTok. Gained a basic understanding of SEO practices, video editing, and graphic design. See a fun graphic I created with LinkedIn profiles for video game (Genshin Impact) characters{" "}
+                Official HoYoCREATORS content creator with over 5K subscribers on YouTube and 500k likes on TikTok. Gained a basic understanding of SEO practices, video editing, and graphic design. See a fun graphic I created with LinkedIn profiles for video game (Genshin Impact) characters{" "}
                 <a href="/nodkrai_linkedin.pdf" target="_blank" rel="noopener noreferrer">
                     here!
                 </a>
