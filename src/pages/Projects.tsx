@@ -40,7 +40,7 @@ const projects: Project[] = [
         images: {
             main: "/project-images/knomi2.png",
             topRight: "/project-images/knomi4.png",
-            bottomRight: "/project-images/knomi1.png",
+            bottomRight: "/project-images/knomi3.png",
         },
         projectUrl: "https://knomi.gg/alexko",
         accent: "#d00fde",
