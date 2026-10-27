@@ -31,7 +31,7 @@ const Sidebar = () => {
             </div>
 
             <div className="sidebar-actions">
-                <a href="/AO_Resume_Aug26.pdf" target="_blank" rel="noopener noreferrer">
+                <a href="/AO_Resume_November.pdf" target="_blank" rel="noopener noreferrer">
                     Download Resume
                 </a>
                 <Link to={isProjectsPage ? "/" : "/projects"}>
