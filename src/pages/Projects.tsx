@@ -7,7 +7,11 @@ interface Project {
     titleColor: string;
     description: string;
     technologies: string[];
-    images?: [string?, string?, string?];
+    images?: {
+        main?: string;
+        topRight?: string;
+        bottomRight?: string;
+    };
     projectUrl?: string;
     accent: string;
 }
@@ -19,11 +23,11 @@ const projects: Project[] = [
         description:
             "Co-founded and revamped an educational exoplanet discovery and collection platform where users discover scientifically grounded planets, complete daily research missions, compare Earth similarity, and grow a personal archive. Modernized the Django application, responsive UI, security, test coverage, and Heroku deployment.",
         technologies: ["Python", "Django", "PostgreSQL", "Heroku", "Pytest"],
-        images: [
-            "/project-images/exo1.png",
-            "/project-images/exo2.png",
-            "/project-images/exo3.png",
-        ],
+        images: {
+            main: "/project-images/exo1.png",
+            topRight: "/project-images/exo2.png",
+            bottomRight: "/project-images/exo3.png",
+        },
         projectUrl: "https://exocollect.org",
         accent: "#7657e6",
     },
@@ -33,11 +37,11 @@ const projects: Project[] = [
         description:
             "Built a customizable personal homepage where users create and share profiles made from ranked lists, links, and content cards. Knomi combines responsive profile editing, drag-and-drop organization, themes, custom tabs, and shareable public pages across a React and TypeScript frontend with a Laravel and MySQL backend.",
         technologies: ["React", "TypeScript", "Laravel", "MySQL", "Vite"],
-        images: [
-            "/project-images/knomi2.png",
-            "/project-images/knomi3.png",
-            "/project-images/knomi1.png",
-        ],
+        images: {
+            main: "/project-images/knomi2.png",
+            topRight: "/project-images/knomi4.png",
+            bottomRight: "/project-images/knomi1.png",
+        },
         projectUrl: "https://knomi.gg/alexko",
         accent: "#d00fde",
     },
@@ -47,11 +51,11 @@ const projects: Project[] = [
         description:
             "Developing a fantasy football app for use with my friends. A replaceable Sleeper API adapter normalizes live stats and projections for custom scoring, while the mobile experience supports lineups, matchups, waivers, trades, standings, playoffs, and league chat.",
         technologies: ["React Native", "TypeScript", "Expo", "Fastify", "Sleeper API"],
-        images: [
-            "/project-images/fantasy1.png",
-            "/project-images/fantasy2.png",
-            "/project-images/fantasy4.png",
-        ],
+        images: {
+            main: "/project-images/fantasy1.png",
+            topRight: "/project-images/fantasy2.png",
+            bottomRight: "/project-images/fantasy4.png",
+        },
         accent: "#08b95f",
     },
 ];
@@ -79,8 +83,8 @@ const Projects = () => {
                                     tabIndex={0}
                                     aria-label={`${project.title} primary project screenshot`}
                                 >
-                                    {project.images?.[0] ? (
-                                        <img src={project.images[0]} alt="" />
+                                    {project.images?.main ? (
+                                        <img src={project.images.main} alt="" />
                                     ) : (
                                         <>
                                             <span className="collage-number">{String(index + 1).padStart(2, "0")}</span>
@@ -94,8 +98,8 @@ const Projects = () => {
                                     tabIndex={0}
                                     aria-label={`${project.title} secondary project screenshot`}
                                 >
-                                    {project.images?.[1] ? (
-                                        <img src={project.images[1]} alt="" />
+                                    {project.images?.topRight ? (
+                                        <img src={project.images.topRight} alt="" />
                                     ) : (
                                         <div className="collage-lines" aria-hidden="true">
                                             <span />
@@ -110,8 +114,8 @@ const Projects = () => {
                                     tabIndex={0}
                                     aria-label={`${project.title} detail project screenshot`}
                                 >
-                                    {project.images?.[2] ? (
-                                        <img src={project.images[2]} alt="" />
+                                    {project.images?.bottomRight ? (
+                                        <img src={project.images.bottomRight} alt="" />
                                     ) : (
                                         <div className="collage-grid" aria-hidden="true">
                                             <span />
@@ -124,15 +128,8 @@ const Projects = () => {
                             </div>
 
                             <div className="project-details">
-                                <h2 style={{ color: project.titleColor }}>{project.title}</h2>
-                                <p className="project-description">{project.description}</p>
-
-                                <div className="project-meta-row">
-                                    <ul className="technology-list" aria-label={`${project.title} technologies`}>
-                                        {project.technologies.map((technology) => (
-                                            <li key={technology}>{technology}</li>
-                                        ))}
-                                    </ul>
+                                <div className="project-title-row">
+                                    <h2 style={{ color: project.titleColor }}>{project.title}</h2>
                                     {project.projectUrl && (
                                         <a
                                             className="project-link"
@@ -145,6 +142,13 @@ const Projects = () => {
                                         </a>
                                     )}
                                 </div>
+                                <p className="project-description">{project.description}</p>
+
+                                <ul className="technology-list" aria-label={`${project.title} technologies`}>
+                                    {project.technologies.map((technology) => (
+                                        <li key={technology}>{technology}</li>
+                                    ))}
+                                </ul>
                             </div>
                         </article>
                     ))}
