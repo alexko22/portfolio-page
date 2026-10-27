@@ -9,51 +9,54 @@ interface Project {
     technologies: string[];
     images?: [string?, string?, string?];
     projectUrl?: string;
-    repositoryUrl?: string;
     accent: string;
 }
 
-// Replace these sample objects with real projects when the content is ready.
 const projects: Project[] = [
     {
-        title: "Project Name One",
-        titleColor: "#087bb7",
-        description:
-            "A short, outcome-focused description can live here. Explain the problem, your contribution, and what makes the finished project worth exploring.",
-        technologies: ["React", "TypeScript", "Node.js", "PostgreSQL"],
-        projectUrl: "#",
-        repositoryUrl: "#",
-        accent: "#009cff",
-    },
-    {
-        title: "Project Name Two",
-        titleColor: "#078a4f",
-        description:
-            "Use this space for a second case study. The layout supports longer summaries while keeping links and the technology stack easy to scan.",
-        technologies: ["Python", "Django", "AI / ML", "Docker"],
-        projectUrl: "#",
-        repositoryUrl: "#",
-        accent: "#08b95f",
-    },
-    {
-        title: "Project Name Three",
+        title: "ExoCollect",
         titleColor: "#6d4ed6",
         description:
-            "Each row is rendered from the project data array, so adding, removing, or reordering future work only requires editing one compact object.",
-        technologies: ["Next.js", "REST API", "Cloud", "Figma"],
-        projectUrl: "#",
-        repositoryUrl: "#",
+            "Co-founded and revamped an educational exoplanet discovery and collection platform where users discover scientifically grounded planets, complete daily research missions, compare Earth similarity, and grow a personal archive. Modernized the Django application, responsive UI, security, test coverage, and Heroku deployment.",
+        technologies: ["Python", "Django", "PostgreSQL", "Heroku", "Pytest"],
+        images: [
+            "/project-images/exo1.png",
+            "/project-images/exo2.png",
+            "/project-images/exo3.png",
+        ],
+        projectUrl: "https://exocollect.org",
         accent: "#7657e6",
+    },
+    {
+        title: "Knomi",
+        titleColor: "#d00fde",
+        description:
+            "Built a customizable personal homepage where users create and share profiles made from ranked lists, links, and content cards. Knomi combines responsive profile editing, drag-and-drop organization, themes, custom tabs, and shareable public pages across a React and TypeScript frontend with a Laravel and MySQL backend.",
+        technologies: ["React", "TypeScript", "Laravel", "MySQL", "Vite"],
+        images: [
+            "/project-images/knomi2.png",
+            "/project-images/knomi3.png",
+            "/project-images/knomi1.png",
+        ],
+        projectUrl: "https://knomi.gg/alexko",
+        accent: "#d00fde",
+    },
+    {
+        title: "KS Fantasy",
+        titleColor: "#078a4f",
+        description:
+            "Developing a fantasy football app for use with my friends. A replaceable Sleeper API adapter normalizes live stats and projections for custom scoring, while the mobile experience supports lineups, matchups, waivers, trades, standings, playoffs, and league chat.",
+        technologies: ["React Native", "TypeScript", "Expo", "Fastify", "Sleeper API"],
+        images: [
+            "/project-images/fantasy1.png",
+            "/project-images/fantasy2.png",
+            "/project-images/fantasy4.png",
+        ],
+        accent: "#08b95f",
     },
 ];
 
 const Projects = () => {
-    const handlePlaceholderClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
-        if (event.currentTarget.getAttribute("href") === "#") {
-            event.preventDefault();
-        }
-    };
-
     return (
         <div className="home-container projects-page">
             <Sidebar />
@@ -68,13 +71,13 @@ const Projects = () => {
                             <div
                                 className="project-collage"
                                 style={{ "--project-accent": project.accent } as React.CSSProperties}
-                                aria-label={`${project.title} image collage placeholder`}
+                                aria-label={`${project.title} project image collage`}
                             >
                                 <div
                                     className="collage-card collage-main"
                                     role="img"
                                     tabIndex={0}
-                                    aria-label={`${project.title} primary image placeholder`}
+                                    aria-label={`${project.title} primary project screenshot`}
                                 >
                                     {project.images?.[0] ? (
                                         <img src={project.images[0]} alt="" />
@@ -89,7 +92,7 @@ const Projects = () => {
                                     className="collage-card collage-top"
                                     role="img"
                                     tabIndex={0}
-                                    aria-label={`${project.title} secondary image placeholder`}
+                                    aria-label={`${project.title} secondary project screenshot`}
                                 >
                                     {project.images?.[1] ? (
                                         <img src={project.images[1]} alt="" />
@@ -105,7 +108,7 @@ const Projects = () => {
                                     className="collage-card collage-bottom"
                                     role="img"
                                     tabIndex={0}
-                                    aria-label={`${project.title} detail image placeholder`}
+                                    aria-label={`${project.title} detail project screenshot`}
                                 >
                                     {project.images?.[2] ? (
                                         <img src={project.images[2]} alt="" />
@@ -124,21 +127,21 @@ const Projects = () => {
                                 <h2 style={{ color: project.titleColor }}>{project.title}</h2>
                                 <p className="project-description">{project.description}</p>
 
-                                <ul className="technology-list" aria-label={`${project.title} technologies`}>
-                                    {project.technologies.map((technology) => (
-                                        <li key={technology}>{technology}</li>
-                                    ))}
-                                </ul>
-
-                                <div className="project-links">
+                                <div className="project-meta-row">
+                                    <ul className="technology-list" aria-label={`${project.title} technologies`}>
+                                        {project.technologies.map((technology) => (
+                                            <li key={technology}>{technology}</li>
+                                        ))}
+                                    </ul>
                                     {project.projectUrl && (
-                                        <a href={project.projectUrl} onClick={handlePlaceholderClick} target="_blank" rel="noopener noreferrer">
-                                            Project <span aria-hidden="true">↗</span>
-                                        </a>
-                                    )}
-                                    {project.repositoryUrl && (
-                                        <a href={project.repositoryUrl} onClick={handlePlaceholderClick} target="_blank" rel="noopener noreferrer">
-                                            Repository <span aria-hidden="true">↗</span>
+                                        <a
+                                            className="project-link"
+                                            href={project.projectUrl}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            style={{ color: project.titleColor, borderColor: project.titleColor }}
+                                        >
+                                            View project <span aria-hidden="true">↗</span>
                                         </a>
                                     )}
                                 </div>

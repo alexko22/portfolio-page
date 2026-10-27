@@ -35,7 +35,7 @@ const Sidebar = () => {
                     Download Resume
                 </a>
                 <Link to={isProjectsPage ? "/" : "/projects"}>
-                    {isProjectsPage ? "Back Home" : "View Projects"}
+                    {isProjectsPage ? "Overview" : "View Projects"}
                 </Link>
             </div>
 

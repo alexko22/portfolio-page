@@ -256,28 +256,35 @@
     font-weight: 600;
 }
 
-.project-links {
+.project-meta-row {
     display: flex;
     flex-wrap: wrap;
-    gap: 1.25rem;
-    margin-top: 1.05rem;
+    align-items: center;
+    gap: 0.6rem 1rem;
+    width: 100%;
 }
 
-.project-links a {
-    color: #111827;
-    font-size: 0.84rem;
+.project-link {
+    flex: 0 0 auto;
+    margin-left: auto;
+    padding: 0.36rem 0.7rem;
+    border: 1px solid currentColor;
+    border-radius: 999px;
+    background: white;
+    font-size: 0.76rem;
     font-weight: 700;
     text-decoration: none;
+    transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
-.project-links a:hover {
-    color: #087bb7;
+.project-link:hover {
+    background: #f3f6f9;
+    transform: translateY(-1px);
 }
 
-.project-links a:focus-visible {
+.project-link:focus-visible {
     outline: 3px solid rgba(0, 156, 255, 0.26);
     outline-offset: 4px;
-    border-radius: 2px;
 }
 
 @media (max-width: 1024px) {
@@ -346,6 +353,10 @@
 
     .project-collage {
         width: min(100%, 340px);
+    }
+
+    .project-link {
+        margin-left: 0;
     }
 }
 
