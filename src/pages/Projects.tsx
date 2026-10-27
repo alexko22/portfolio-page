@@ -21,7 +21,7 @@ const projects: Project[] = [
         title: "ExoCollect",
         titleColor: "#6d4ed6",
         description:
-            "Co-founded and revamped an educational exoplanet discovery and collection platform where users discover scientifically grounded planets, complete daily research missions, compare Earth similarity, and grow a personal archive. Modernized the Django application, responsive UI, security, test coverage, and Heroku deployment.",
+            "Co-founded ExoCollect, an exoplanetary collection platform where users discover uniquely generated planets, complete daily research missions, compare findings, and grow a personal archive. Modernized the Django application with responsive UI, security, test coverage, and an active Heroku deployment.",
         technologies: ["Python", "Django", "PostgreSQL", "Heroku", "Pytest"],
         images: {
             main: "/project-images/exo1.png",
@@ -35,7 +35,7 @@ const projects: Project[] = [
         title: "Knomi",
         titleColor: "#d00fde",
         description:
-            "Built a customizable personal homepage where users create and share profiles made from ranked lists, links, and content cards. Knomi combines responsive profile editing, drag-and-drop organization, themes, custom tabs, and shareable public pages across a React and TypeScript frontend with a Laravel and MySQL backend.",
+            "Created a customizable personal page where users create and share profiles made from ranked lists, links, and content cards. Knomi combines responsive profile editing, drag-and-drop organization, themes, custom tabs, and shareable public pages across a React and TypeScript frontend with a Laravel and MySQL backend.",
         technologies: ["React", "TypeScript", "Laravel", "MySQL", "Vite"],
         images: {
             main: "/project-images/knomi2.png",
@@ -49,7 +49,7 @@ const projects: Project[] = [
         title: "KS Fantasy",
         titleColor: "#078a4f",
         description:
-            "Developing a fantasy football app for use with my friends. A replaceable Sleeper API adapter normalizes live stats and projections for custom scoring, while the mobile experience supports lineups, matchups, waivers, trades, standings, playoffs, and league chat.",
+            "Actively developing a fantasy football mobile app for use with my friends! It runs on a replaceable Sleeper API, normalizes live stats/projections for custom scoring, and supports lineups, matchups, waivers, trades, standings, playoffs, and league chat.",
         technologies: ["React Native", "TypeScript", "Expo", "Fastify", "Sleeper API"],
         images: {
             main: "/project-images/fantasy1.png",
