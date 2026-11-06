@@ -38,7 +38,19 @@ const cards : CardProps[] = [
     {
         type: "default",
         title: "ExoCollect - Co-Founder & Developer",
-        description: "Co-founded ExoCollect, a Django-based web platform providing a gamified way for users (virtual astronomers) to learn about the composition of the universe via discovering uniquely generated virtual planets (inspired by real astronomical frequencies). The platform is currently in a second test phase! See my projects to try it out!",
+        description: (
+            <>
+                Co-founded ExoCollect, a Django-based web platform providing a gamified way for users (virtual astronomers) to learn about the composition of the universe via discovering uniquely generated virtual planets (inspired by real astronomical frequencies). The platform is currently in a second test phase! You can try it out
+                <a
+                    href="https://exocollect.org/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="card-link"
+                >
+                    here!
+                </a>
+            </>
+        ),
         imageUrl: "/exo_collect.png",
     },
     // Job Card

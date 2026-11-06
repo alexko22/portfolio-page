@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import Sidebar from "../components/Sidebar";
 import "../styles/Home.css";
 import "../styles/Projects.css";
@@ -61,6 +62,25 @@ const projects: Project[] = [
 ];
 
 const Projects = () => {
+    const [selectedImage, setSelectedImage] = useState<{ src: string; alt: string } | null>(null);
+
+    useEffect(() => {
+        if (!selectedImage) return;
+
+        const handleKeyDown = (event: KeyboardEvent) => {
+            if (event.key === "Escape") setSelectedImage(null);
+        };
+        const previousOverflow = document.body.style.overflow;
+
+        document.body.style.overflow = "hidden";
+        window.addEventListener("keydown", handleKeyDown);
+
+        return () => {
+            document.body.style.overflow = previousOverflow;
+            window.removeEventListener("keydown", handleKeyDown);
+        };
+    }, [selectedImage]);
+
     return (
         <div className="home-container projects-page">
             <Sidebar />
@@ -77,11 +97,14 @@ const Projects = () => {
                                 style={{ "--project-accent": project.accent } as React.CSSProperties}
                                 aria-label={`${project.title} project image collage`}
                             >
-                                <div
+                                <button
+                                    type="button"
                                     className="collage-card collage-main"
-                                    role="img"
-                                    tabIndex={0}
-                                    aria-label={`${project.title} primary project screenshot`}
+                                    aria-label={`Enlarge ${project.title} primary project screenshot`}
+                                    onClick={() => project.images?.main && setSelectedImage({
+                                        src: project.images.main,
+                                        alt: `${project.title} primary project screenshot`,
+                                    })}
                                 >
                                     {project.images?.main ? (
                                         <img src={project.images.main} alt="" />
@@ -91,12 +114,15 @@ const Projects = () => {
                                             <div className="collage-orbit" aria-hidden="true" />
                                         </>
                                     )}
-                                </div>
-                                <div
+                                </button>
+                                <button
+                                    type="button"
                                     className="collage-card collage-top"
-                                    role="img"
-                                    tabIndex={0}
-                                    aria-label={`${project.title} secondary project screenshot`}
+                                    aria-label={`Enlarge ${project.title} secondary project screenshot`}
+                                    onClick={() => project.images?.topRight && setSelectedImage({
+                                        src: project.images.topRight,
+                                        alt: `${project.title} secondary project screenshot`,
+                                    })}
                                 >
                                     {project.images?.topRight ? (
                                         <img src={project.images.topRight} alt="" />
@@ -107,12 +133,15 @@ const Projects = () => {
                                             <span />
                                         </div>
                                     )}
-                                </div>
-                                <div
+                                </button>
+                                <button
+                                    type="button"
                                     className="collage-card collage-bottom"
-                                    role="img"
-                                    tabIndex={0}
-                                    aria-label={`${project.title} detail project screenshot`}
+                                    aria-label={`Enlarge ${project.title} detail project screenshot`}
+                                    onClick={() => project.images?.bottomRight && setSelectedImage({
+                                        src: project.images.bottomRight,
+                                        alt: `${project.title} detail project screenshot`,
+                                    })}
                                 >
                                     {project.images?.bottomRight ? (
                                         <img src={project.images.bottomRight} alt="" />
@@ -124,7 +153,7 @@ const Projects = () => {
                                             <span />
                                         </div>
                                     )}
-                                </div>
+                                </button>
                             </div>
 
                             <div className="project-details">
@@ -138,7 +167,14 @@ const Projects = () => {
                                             rel="noopener noreferrer"
                                             style={{ color: project.titleColor, borderColor: project.titleColor }}
                                         >
-                                            View project <span aria-hidden="true">↗</span>
+                                            <span>View project</span>
+                                            <svg
+                                                className="project-link-icon"
+                                                viewBox="0 0 16 16"
+                                                aria-hidden="true"
+                                            >
+                                                <path d="M5 11 11 5M6 5h5v5" />
+                                            </svg>
                                         </a>
                                     )}
                                 </div>
@@ -154,6 +190,31 @@ const Projects = () => {
                     ))}
                 </div>
             </main>
+
+            {selectedImage && (
+                <div
+                    className="image-lightbox"
+                    role="dialog"
+                    aria-modal="true"
+                    aria-label={selectedImage.alt}
+                    onClick={() => setSelectedImage(null)}
+                >
+                    <div className="image-lightbox-content" onClick={(event) => event.stopPropagation()}>
+                        <button
+                            type="button"
+                            className="image-lightbox-close"
+                            aria-label="Close enlarged image"
+                            onClick={() => setSelectedImage(null)}
+                            autoFocus
+                        >
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="m6 6 12 12M18 6 6 18" />
+                            </svg>
+                        </button>
+                        <img src={selectedImage.src} alt={selectedImage.alt} />
+                    </div>
+                </div>
+            )}
         </div>
     );
 };
