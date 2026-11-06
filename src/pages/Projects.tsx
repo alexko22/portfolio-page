@@ -51,7 +51,7 @@ const projects: Project[] = [
         titleColor: "#078a4f",
         description:
             "Actively developing a fantasy football mobile app for use with my friends! It runs on a replaceable Sleeper API, normalizes live stats/projections for custom scoring, and supports lineups, matchups, waivers, trades, standings, playoffs, and league chat.",
-        technologies: ["React Native", "TypeScript", "Expo", "Fastify", "Sleeper API"],
+        technologies: ["React Native", "TypeScript", "Expo", "Sleeper API"],
         images: {
             main: "/project-images/fantasy1.png",
             topRight: "/project-images/fantasy2.png",
